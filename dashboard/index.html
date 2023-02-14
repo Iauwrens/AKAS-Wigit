@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <!-- Material Icons CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="./images/logo.png">
+                    <h2>Akas<span class="danger"> Dashboard</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="/dashboard/index.html" class="active">
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">receipt_long</span>
+                    <h3>Reserveringen</h3>
+                </a>
+                <a href="/dashboard/notificaties.html">
+                    <span class="material-icons-sharp">mail_outline</span>
+                    <h3>Notificaties</h3>
+                    <span class="message-count">26</span>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Log uit</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- Middle section -->
+        <main>
+            <h1>Dashboard</h1>
+
+            <div class="recent-orders">
+                <h2>Recente Orders</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Naam</th>
+                            <th>Datum</th>
+                            <th>Tafel Nr</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mischa vd Wals</td>
+                            <td>14 Februari 2023</td>
+                            <td>14</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Mischa vd Wals</td>
+                            <td>14 Februari 2023</td>
+                            <td>14</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Mischa vd Wals</td>
+                            <td>14 Februari 2023</td>
+                            <td>14</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Mischa vd Wals</td>
+                            <td>14 Februari 2023</td>
+                            <td>14</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Mischa vd Wals</td>
+                            <td>14 Februari 2023</td>
+                            <td>14</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#">Zie alle orders</a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
