@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script src="popup.js"></script>
+    <div class="center">
+        <button type="submit" class="btn" onclick="openPopup()">Reserveer</button>
+    </div>
+
+    <div class="popup" id="popup">
+      <div class="close-button" onclick="closePopup()">&times;</div>
+      <div class="form">
+        <h2>Reserveren</h2>
+
+        <div class="form-element">
+          <label for="personen">Personen</label>
+          <input type="text" id="personen" placeholder="Voer aantal in">
+        </div>
+
+        <div class="form-element">
+          <label for="datum">Datum</label>
+          <input type="date" id="datum">
+        </div>
+  
+        <div class="form-element">
+          <label for="tijd">Tijd</label>
+          <input type="time" id="tijd">
+        </div>
+
+        <div class="form-element">
+          <button type="submit" class="btn" onclick="moreInfo()">Reserveren</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="info" id="info">
+      <div class="close-button" onclick="closeInfo()">&times;</div>
+      <div class="back-button" onclick="backInfo()">&larr;</div>
+
+      <div class="form">
+        <h2>Reserveren info</h2>
+
+
+        <div class="form-element">
+          <label for="naam">naam</label>
+          <input type="naam" id="naam" placeholder="Voer uw naam in">
+        </div>
+
+        <div class="form-element">
+          <label for="email">email</label>
+          <input type="email" id="email" placeholder="Voer uw email in">
+        </div>
+
+        <div class="form-element">
+          <button type="submit" class="btn" onclick="submit()">Reserveren platsen</button>
+        </div>
+
+      </div>
+    </div>
+
+
+      <script>
+        let popup = document.getElementById("popup");
+        let info = document.getElementById("info");
+
+        function openPopup()
+        {
+            popup.classList.add("open-popup");
+        }
+
+        function closePopup()
+        {
+            popup.classList.remove("open-popup");
+        }
+
+        function moreInfo()
+        {
+            popup.classList.remove("open-popup");
+            info.classList.add("open-info");
+        }
+
+        function closeInfo()
+        {
+            info.classList.remove("open-info");
+        }
+
+        function backInfo()
+        {
+          info.classList.remove("open-info")
+          popup.classList.add("open-popup");
+        }
+      </script>
+</body>
+</html>
