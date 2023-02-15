@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <!-- Material Icons CDN -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
@@ -12,6 +9,7 @@
 </head>
 <body>
     <div class="container">
+        <!-- Sidebar -->
         <aside>
             <div class="top">
                 <div class="logo">
@@ -94,6 +92,47 @@
                 <a href="#">Zie alle orders</a>
             </div>
         </main>
+        <!-- Top Profile -->
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+                <div class="profile">
+                    <div class="info">
+                        <p>Welkom, <b>Admin</b></p>
+                    </div>
+                    <div class="pfp">
+                        <img src="./images/defaultpfp.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="recent-updates">
+                <h2>Recente Updates</h2>
+                <div class="updates">
+                    <div class="update">
+                        <div class="pfp">
+                            <img src="./images/Jawa.png">
+                        </div>
+                        <div class="message">
+                            <p><b>Mischa van der Wals</b> heeft een reservering geplaatst voor 14 Februari</p>
+                            <small class="text-muted">1 uur geleden</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="updates">
+                    <div class="update">
+                        <div class="pfp">
+                            <img src="./images/defaultpfp.jpg">
+                        </div>
+                        <div class="message">
+                            <p>Reservering van <b>Mischa van der Wals</b> goedgekeurd.</p>
+                            <small class="text-muted">1 uur geleden</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
