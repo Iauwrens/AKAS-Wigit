@@ -12,13 +12,13 @@
     type: 'line',
     data: {
       labels: [
-        'Sunday',
-        'Monday',
-        'Tuesday',
-        'Wednesday',
-        'Thursday',
-        'Friday',
-        'Saturday'
+        'Zondag',
+        'Maandag',
+        'Dinsdag',
+        'Woensdag',
+        'Donderdag',
+        'Vrijdag',
+        'Zaterdag'
       ],
       datasets: [{
         data: [
@@ -32,9 +32,9 @@
         ],
         lineTension: 0,
         backgroundColor: 'transparent',
-        borderColor: '#007bff',
+        borderColor: '#F57A00',
         borderWidth: 4,
-        pointBackgroundColor: '#007bff'
+        pointBackgroundColor: '#fff'
       }]
     },
     options: {
